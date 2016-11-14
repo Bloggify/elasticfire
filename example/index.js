@@ -12,9 +12,9 @@ let ef = new ElasticFire({
     }
   , paths: [
        {
-          path : "users",
+          path : "cities",
           index: "firebase",
-          type : "user"
+          type : "city"
        },
        {
           path  : "messages",
