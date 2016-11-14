@@ -1,5 +1,5 @@
 {
-  "name": "elastic-fire",
+  "name": "elasticfire",
   "version": "1.0.0",
   "description": "A flexibe and configurable module to connect Firebase with ElasticSearch.",
   "main": "lib/index.js",
@@ -10,6 +10,34 @@
     "elasticsearch": "^11.0.1",
     "faker": "^3.1.0",
     "firebase": "^3.5.2",
+    "obj-unflatten": "^1.0.4",
     "ul": "^5.2.9"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloggify/elasticfire.git"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bloggify/elasticfire/issues"
+  },
+  "homepage": "https://github.com/Bloggify/elasticfire#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }

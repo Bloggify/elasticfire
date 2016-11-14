@@ -4,8 +4,11 @@ const ElasticFire = require("..");
 
 let ef = new ElasticFire({
     firebase: {
-        databaseURL: "..."
-      , serviceAccount: "..."
+        apiKey: "AIzaSyAsFK9oDTtsCdqrHAfQKs8_TmNtBOoIkBY",
+        authDomain: "emma-ea74d.firebaseapp.com",
+        databaseURL: "https://emma-ea74d.firebaseio.com",
+        storageBucket: "emma-ea74d.appspot.com",
+        messagingSenderId: "95300595436"
     }
   , paths: [
        {
