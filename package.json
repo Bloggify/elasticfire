@@ -1,23 +1,15 @@
 {
-  "name": "Flashlight",
-  "version": "0.1.0",
-  "description": "A search utility for Firebase",
-  "homepage": "https://github.com/firebase/flashlight",
-  "author": {
-    "name": "Kato Richardson",
-    "email": "katowulf@gmail.com"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "monitor": "nodemon app.js",
-    "deploy": "gcloud app deploy"
-  },
-  "main": "app.js",
+  "name": "elastic-fire",
+  "version": "1.0.0",
+  "description": "A flexibe and configurable module to connect Firebase with ElasticSearch.",
+  "main": "lib/index.js",
   "devDependencies": {},
   "dependencies": {
     "JQDeferred": "~1.9.1",
     "colors": "~0.6.2",
     "elasticsearch": "^11.0.1",
-    "firebase": "^3.5.2"
+    "faker": "^3.1.0",
+    "firebase": "^3.5.2",
+    "ul": "^5.2.9"
   }
 }
