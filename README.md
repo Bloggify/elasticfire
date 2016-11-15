@@ -57,14 +57,14 @@ let ef = new ElasticFire({
                // which points to the `users` collection.
                {
                    path: "users"
-                  , name: "author"
+                 , name: "author"
                }
 
                // If we have an array of comment ids, pointing
                // to another collection, then they will be joined too
              , {
                    path: "comments"
-                  , name: "comments"
+                 , name: "comments"
                }
            ]
 
@@ -88,6 +88,7 @@ ef.on("error", err => {
 ```
 
 ## :memo: Documentation
+
 
 ### `ElasticFire(config)`
 Creates a new instance of `ElasticFire`.
