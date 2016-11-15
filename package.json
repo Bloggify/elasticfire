@@ -50,7 +50,8 @@
           "Support for joins"
         ]
       }
-    ]
+    ],
+    "thanks": "[`flashlight`](https://github.com/firebase/flashlight) was the main inspiration for this project. :cake:"
   },
   "author": "Bloggify <support@bloggify.org> (https://bloggify.org)"
 }

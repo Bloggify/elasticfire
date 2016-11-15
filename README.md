@@ -89,7 +89,6 @@ ef.on("error", err => {
 
 ## :memo: Documentation
 
-
 ### `ElasticFire(config)`
 Creates a new instance of `ElasticFire`.
 
@@ -131,6 +130,9 @@ Triggers the search in Elasticsearch.
 
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
+
+## :cake: Thanks
+[`flashlight`](https://github.com/firebase/flashlight) was the main inspiration for this project. :cake:
 
 
 ## :scroll: License
