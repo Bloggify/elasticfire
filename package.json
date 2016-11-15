@@ -5,10 +5,7 @@
   "main": "lib/index.js",
   "devDependencies": {},
   "dependencies": {
-    "JQDeferred": "~1.9.1",
-    "colors": "~0.6.2",
     "elasticsearch": "^11.0.1",
-    "faker": "^3.1.0",
     "firebase": "^3.5.2",
     "obj-unflatten": "^1.0.4",
     "ul": "^5.2.9"
@@ -23,7 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/Bloggify/elasticfire.git"
   },
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Bloggify/elasticfire/issues"
@@ -39,5 +35,22 @@
     "menu/",
     "cli.js",
     "index.js"
-  ]
+  ],
+  "blah": {
+    "h_img": "https://i.imgur.com/WnGtDhC.png",
+    "description": [
+      {
+        "h2": ":rocket: Features"
+      },
+      {
+        "ul": [
+          "Easily configure the way how the data should be taken from Firebase",
+          "Filter out documents",
+          "Include and exclude specific fields",
+          "Support for joins"
+        ]
+      }
+    ]
+  },
+  "author": "Bloggify <support@bloggify.org> (https://bloggify.org)"
 }
