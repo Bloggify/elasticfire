@@ -1,6 +1,6 @@
 {
   "name": "elasticfire",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A flexibe and configurable module to connect Firebase with Elasticsearch.",
   "main": "lib/index.js",
   "devDependencies": {},
