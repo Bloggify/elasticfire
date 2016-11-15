@@ -89,6 +89,7 @@ ef.on("error", err => {
 
 ## :memo: Documentation
 
+
 ### `ElasticFire(config)`
 Creates a new instance of `ElasticFire`.
 
