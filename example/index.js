@@ -14,7 +14,17 @@ let ef = new ElasticFire({
        {
           path : "cities",
           index: "firebase",
-          type : "city"
+          type : "city",
+          joins: [
+            {
+                path: "foos",
+                name: "foo"
+            },
+            {
+                path: "foos",
+                name: "foos"
+            }
+          ]
        },
        {
           path  : "messages",
@@ -28,4 +38,10 @@ let ef = new ElasticFire({
 
 ef.on("error", err => {
     console.error(err);
+}).on("index_created", name => {
+    console.log(`${name} created`);
+}).on("index_updated", name => {
+    console.log(`${name} updated`);
+}).on("index_deleted", name => {
+    console.log(`${name} deleted`);
 });
