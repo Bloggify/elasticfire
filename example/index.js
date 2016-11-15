@@ -2,40 +2,53 @@
 
 const ElasticFire = require("..");
 
+// Initialize the ElasticFire instance
 let ef = new ElasticFire({
+
+    // Set the Firebase configuration
     firebase: {
-        apiKey: "AIzaSyAsFK9oDTtsCdqrHAfQKs8_TmNtBOoIkBY",
-        authDomain: "emma-ea74d.firebaseapp.com",
-        databaseURL: "https://emma-ea74d.firebaseio.com",
-        storageBucket: "emma-ea74d.appspot.com",
-        messagingSenderId: "95300595436"
+        apiKey: "AI...BY",
+        authDomain: "em...d.firebaseapp.com",
+        databaseURL: "https://em...d.firebaseio.com",
+        storageBucket: "em...d.appspot.com",
+        messagingSenderId: "95...36"
     }
+
+    // Firebase paths and how to index them in Elasticsearch
   , paths: [
        {
-          path : "cities",
-          index: "firebase",
-          type : "city",
-          joins: [
-            {
-                path: "foos",
-                name: "foo"
-            },
-            {
-                path: "foos",
-                name: "foos"
-            }
-          ]
-       },
-       {
-          path  : "messages",
-          index : "firebase",
-          type  : "message",
-          fields: ['msg', 'name'],
-          filter: function(data) { return data.name !== 'system'; }
+           // Firebase path
+           path : "articles"
+
+           // Elasticsearch index and type
+         , index: "articles"
+         , type : "article"
+
+           // Optional joined fields
+         , joins: [
+               // The `author` is a field from the article
+               // which points to the `users` collection.
+               {
+                   path: "users"
+                  , name: "author"
+               }
+
+               // If we have an array of comment ids, pointing
+               // to another collection, then they will be joined too
+             , {
+                   path: "comments"
+                  , name: "comments"
+               }
+           ]
+
+           // Filter out some data
+         , filter: (data, snap) => snap.key !== "_id"
        }
     ]
 });
 
+// Listen for the events emitted by
+// the ElasticFire instanceand output some data
 ef.on("error", err => {
     console.error(err);
 }).on("index_created", name => {
