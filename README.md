@@ -5,7 +5,7 @@
 
  [![Version](https://img.shields.io/npm/v/elasticfire.svg)](https://www.npmjs.com/package/elasticfire) [![Downloads](https://img.shields.io/npm/dt/elasticfire.svg)](https://www.npmjs.com/package/elasticfire)
 
-> A flexibe and configurable module to connect Firebase with ElasticSearch.
+> A flexibe and configurable module to connect Firebase with Elasticsearch.
 
 ## :rocket: Features
 
