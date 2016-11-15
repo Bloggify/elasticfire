@@ -113,6 +113,7 @@ Creates a new instance of `ElasticFire`.
          receives as arguments the `data` object and the `snapshot`.
 
          By default, all the objects from a path are indexed.
+   - `firebase` (Object): The Firebase configuration.
    - elasticSearch (Object): The Elasticsearch configuration:
        - host (String): The Elasticsearch host (default: `localhost`).
        - port (Number): The Elasticsearch port (default: `9200`).
