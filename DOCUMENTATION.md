@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Creates a new instance of `ElasticFire`.
 
 #### Params
+
 - **Object** `config`: An object containing the following fields:
    - paths (Array): An array of objects to configure the way how the
      data is taken from Firebase:
